@@ -19,8 +19,14 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Dashboard',
         href: '/dashboard',
+        icon: ,
+    },
+    {
+        title: 'Welcome',
+        href: '/welcome',
         icon: LayoutGrid,
     },
+   
 ];
 
 const rightNavItems: NavItem[] = [
