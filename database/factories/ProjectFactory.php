@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Projects>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Project>
  */
-class ProjectsFactory extends Factory
+class ProjectFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -24,6 +24,8 @@ class ProjectsFactory extends Factory
             "image_path"=> fake()->imageUrl(),
             "created_by"=> 1,
             "updated_by"=> 1,
+            "updated_at"=> now(),
+            "created_at"=> now(),
         ];
     }
 }

@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\Projects;
+use App\Models\Project;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use SebastianBergmann\CodeCoverage\Report\Xml\Project;
+use SebastianBergmann\CodeCoverage\Report\Xml\Project as P;
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,6 +23,9 @@ class DatabaseSeeder extends Seeder
             'password'=> bcrypt('Laflemme1!'),
             'email_verified_at'=>time(),
         ]);
-        Projects::factory()->count(30)->hasTasks()->create();
+        Project::factory()
+        ->count(30)
+        ->hasTasks(30)
+        ->create();
     }
 }
