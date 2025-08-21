@@ -8,7 +8,7 @@ use Inertia\Inertia;
 
 Route::get('/welcome', function () {
     return Inertia::render('welcome');
-})->name('welcome');
+})->name('home');
 
 Route::redirect('/','/dashboard');
 
