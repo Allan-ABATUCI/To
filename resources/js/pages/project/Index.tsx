@@ -3,7 +3,7 @@ import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
 
 
-export default function Index({auth,projects}){
+export default function Index({}){
     const breadcrumbs: BreadcrumbItem[] = [
         {
             title: 'Dashboard',
@@ -15,7 +15,17 @@ export default function Index({auth,projects}){
         <>
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Projects" />
-            <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4 overflow-x-auto"></div>
+            <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4 overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
 
         </AppLayout>
         </>
