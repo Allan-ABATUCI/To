@@ -4,6 +4,7 @@ import { Head } from '@inertiajs/react';
 
 
 export default function Index({projects}){
+   
     const breadcrumbs: BreadcrumbItem[] = [
         {
             title: 'Dashboard',
